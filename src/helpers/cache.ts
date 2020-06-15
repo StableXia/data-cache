@@ -1,5 +1,9 @@
-import { IfaCatchItemProps } from './flows';
-import { EXPIRES } from './constants';
+interface IfaCatchItemProps<T> {
+  data: T;
+  expires: number;
+}
+
+const EXPIRES = 1 * 60 * 60;
 
 class CacheItem<T> {
   expires: number;

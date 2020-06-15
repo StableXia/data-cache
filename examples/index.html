@@ -8,6 +8,12 @@
   <body></body>
   <script src="../lib/index.umd.js"></script>
   <script>
-    TsStaging.sayHello()
+    const test = new TsStaging();
+    test.set('a', 'a');
+    test.set('b', 'b');
+
+    const test1 = new TsStaging();
+    test1.set('b', 'b');
+    test1.set('c', 'c');
   </script>
 </html>
